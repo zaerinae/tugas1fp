@@ -79,21 +79,26 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+       <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-2">
+             <img src="assets/img/nana.png"
+                alt="" class="img-rounded img-responsive" />
             </div>
+            <div class="col-sm-4 col-md-4">
+                <blockquote>
+                    <p>Zaerina Eriyadi</p> <p>18090095</p> <p>5D</p> <small><cite title="Source Title">Tegal, Indonesia  <i class="glyphicon glyphicon-map-marker"></i></cite></small>
+                 </blockquote>
+                    <p> <i class="glyphicon glyphicon-envelope"></i> john.ilham58@gmail.com
+                <br
+                    /> <i class="glyphicon glyphicon-globe"></i> https://koifarmtegal.com/
+                <br /> <i class="glyphicon glyphicon-gift"></i> 26 November 1998</p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
         </div>
     </body>
 </html>
