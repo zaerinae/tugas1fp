@@ -79,26 +79,40 @@
                 </div>
             @endif
 
-       <div class="container">
-        <div class="row">
-            <div class="col-sm-2 col-md-2">
-             <img src="assets/img/nana.png"
-                alt="" class="img-rounded img-responsive" />
+            <div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}">Register</a>
+                        @endif
+                    @endauth
+                </div>
+            @endif
+
+            <div class="content">
+                <div class="title m-b-md">
+                    Zaerina Eriyadi
+                    <br>
+                    18090095
+                    <br>
+                    6C
+                </div>
+
+                <div class="links">
+                    <a href="https://laravel.com/docs">Docs</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://github.com/zaerinae/laravel_heroku">GitHub</a>
+                </div>
             </div>
-            <div class="col-sm-4 col-md-4">
-                <blockquote>
-                    <p>Zaerina Eriyadi</p> <p>18090095</p> <p>5D</p> <small><cite title="Source Title">Tegal, Indonesia  <i class="glyphicon glyphicon-map-marker"></i></cite></small>
-                 </blockquote>
-                    <p> <i class="glyphicon glyphicon-envelope"></i> john.ilham58@gmail.com
-                <br
-                    /> <i class="glyphicon glyphicon-globe"></i> https://koifarmtegal.com/
-                <br /> <i class="glyphicon glyphicon-gift"></i> 26 November 1998</p>
-        </div>
-    </div>
-</div>
-<br>
-<br>
-<br>
         </div>
     </body>
 </html>
